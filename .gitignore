@@ -28,6 +28,7 @@ db/*.sqlite3
 .sass-cache
 /config/config.yml
 /config/database.yml
+/config/database.yml
 /coverage.data
 /coverage/
 /db/*.javadb/
@@ -85,3 +86,4 @@ xerial*.*
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+config/database.yml
