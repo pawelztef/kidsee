@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :admin do
-    # TODO lessen possible routes through 'only' or 'except'
-    resources :settings
+    get 'settings/edit'
+    get 'settings/update'
   end
 end

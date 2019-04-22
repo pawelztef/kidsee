@@ -1,2 +1,5 @@
-<h1>Admin::Settings#edit</h1>
-<p>Find me in app/views/admin/settings/edit.html.erb</p>
+<%= @title if @title %>
+<%= simple_form_for @setting do |f| %>
+  <%= f.input :company_name %>
+  <%= f.button :submit %>
+<% end %>

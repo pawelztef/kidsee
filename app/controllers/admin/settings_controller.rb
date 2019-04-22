@@ -3,6 +3,7 @@ class Admin::SettingsController < ApplicationController
 
   def edit
     @setting = Admin::Setting.instance
+    byebug
   end
 
   def update
