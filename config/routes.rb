@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   namespace :admin do
-    get 'settings/edit'
-    get 'settings/update'
+    resources :settings
   end
 end
