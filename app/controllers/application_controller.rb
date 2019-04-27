@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  #TODO move contnent to proper controller
   before_action :authenticate_admin!
  private
   # Overwriting the sign_out redirect path method
