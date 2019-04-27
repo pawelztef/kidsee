@@ -2,11 +2,11 @@ class Admin::SettingsController < ApplicationController
   before_action :set_title
 
   def index
-    @setting = Setting.instance
+    @settings = Setting.instance
   end
 
   def update
-    @setting = Setting.update(settings_params)
+    @settings = Setting.update(settings_params)
     redirect_to admin_settings_path
   end
 
