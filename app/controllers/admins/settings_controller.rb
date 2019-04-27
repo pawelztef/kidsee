@@ -1,4 +1,4 @@
-class Admins::SettingsController < ApplicationController
+class Admins::SettingsController < Admins::AdminsController
   before_action :set_title
 
   def index

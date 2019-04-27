@@ -1,5 +1,11 @@
 class ApplicationController < ActionController::Base
-  #TODO move contnent to proper controller
-  before_action :authenticate_admin!
- private
+ layout :layout_by_controller
+ protected
+   def layout_by_controller
+      if devise_controller? 
+        "admin_authentication"
+      else
+        "admin" 
+      end
+   end
 end
