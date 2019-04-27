@@ -1,4 +1,4 @@
-class Admin::SettingsController < ApplicationController
+class Admins::SettingsController < ApplicationController
   before_action :set_title
 
   def index
@@ -7,7 +7,7 @@ class Admin::SettingsController < ApplicationController
 
   def update
     @settings = Setting.update(settings_params)
-    redirect_to admin_settings_path
+    redirect_to admins_settings_path
   end
 
   private
