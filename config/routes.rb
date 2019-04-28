@@ -2,12 +2,15 @@ Rails.application.routes.draw do
   devise_for :caregivers
   devise_scope :caregiver do
     authenticated  do
-      root to: 'caregivers#index', as: 'authenticated_caregiver_root'
+      root to: 'caregivers/caregivers#index', as: 'authenticated_caregiver_root'
     end
 
     unauthenticated do
       root to: 'devise/sessions#new', as: 'unauthenticated_caregiver_root'
     end
+  end
+
+  namespace :caregivers do
   end
 
   devise_for :admins
