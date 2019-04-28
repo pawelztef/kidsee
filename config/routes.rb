@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :caregivers
   devise_for :admins
   devise_scope :admin do
     authenticated  do
