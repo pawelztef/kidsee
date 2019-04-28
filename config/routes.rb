@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  get 'caregivers/index'
   devise_for :caregivers
   devise_scope :caregiver do
     authenticated  do
-      root to: 'admins/settings#index', as: 'authenticated_caregiver_root'
+      root to: 'caregivers#index', as: 'authenticated_caregiver_root'
     end
 
     unauthenticated do
