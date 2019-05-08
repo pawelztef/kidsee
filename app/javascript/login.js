@@ -5,9 +5,16 @@ $(() => {
   }; 
   // Get all imputs
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  const emailInput = document.getElementById('email');
-  const passInput = document.getElementById('password');
+  const emailInput = document.getElementById('caregiver_email');
+  const passInput = document.getElementById('caregiver_password');
   const inputsFocus = document.querySelectorAll('input');
+
+  // Check content of inputs
+  // inputsFocus.forEach((input) => {
+  //   if(input.value.lenght != 0) {
+      // input.previousElementSibling.className += "form-label-focus"; 
+    // }
+  // })
 
   // Add a focus event to every each input
   inputsFocus.forEach((inputFocus) => {
@@ -36,7 +43,7 @@ $(() => {
   passInput.addEventListener('keyup', (event) => {
     if (passInput.value == "") {
       passInput.style.borderColor = 'red';
-    } else {
+    } else { label: false
       passInput.style.borderColor = 'green';
     }
   });
