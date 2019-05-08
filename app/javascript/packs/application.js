@@ -17,16 +17,20 @@
 
 import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+
 Rails.start();
 Turbolinks.start();
-
-
-
-
 
 import 'kidsee';
 require('custom');
 
 $(() => {
+// loads the Icon plugin
+// UIkit.use(Icons);
+// components can be called from the imported UIkit reference
+// UIkit.notification('Hello world.');
+    
 //  document.body.style.backgroundColor = 'lime'
 })
