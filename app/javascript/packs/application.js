@@ -25,6 +25,7 @@ Turbolinks.start();
 
 import 'kidsee';
 require('custom');
+require('login');
 
 $(() => {
 // loads the Icon plugin
