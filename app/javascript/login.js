@@ -9,13 +9,13 @@ $(() => {
   const passInput = document.getElementById('caregiver_password');
   const inputsFocus = document.querySelectorAll('input');
 
-  // Check content of inputs
-  // inputsFocus.forEach((input) => {
-  //   if(input.value.lenght != 0) {
-      // input.previousElementSibling.className += "form-label-focus"; 
-    // }
-  // })
 
+  window.one = inputsFocus[2];
+
+  if(inputsFocus[2].value != "") {
+      inputsFocus[2].previousElementSibling.className += "form-label-focus"; 
+  };
+ 
   // Add a focus event to every each input
   inputsFocus.forEach((inputFocus) => {
     inputFocus.addEventListener('focus', (event) => {
